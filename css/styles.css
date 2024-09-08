@@ -17,8 +17,11 @@ nav {
 
 nav .logo h1 {
     margin: 0;
-    color: #28D0F5;
+    /* color: #28D0F5; */
+    color: white;
     font-family: 'Orbitron', sans-serif;
+    display: inline-block;
+
 }
 
 nav .nav-links {
@@ -43,7 +46,7 @@ nav .nav-links a:hover {
 }
 
 .home-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('home-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -66,6 +69,41 @@ nav .nav-links a:hover {
     color: #ddd;
 }
 
+.social-icons {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    /* Default icon color */
+    font-size: 40px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for changing icon color */
+.social-icons a:hover {
+    color: #007bb5;
+    /* Light blue for hover */
+}
+
+/* Instagram */
+.social-icons a.instagram:hover {
+    color: #E1306C;
+}
+
+/* Twitter */
+.social-icons a.twitter:hover {
+    color: #1DA1F2;
+}
+
+/* YouTube */
+.social-icons a.youtube:hover {
+    color: #FF0000;
+}
+
 .cta-button {
     padding: 10px 20px;
     background-color: #007BFF;
@@ -80,27 +118,27 @@ nav .nav-links a:hover {
     transform: scale(1.1);
 }
 
-.services-section,
+.products-section,
 .contact-section {
     padding: 50px 20px;
     text-align: center;
     background-color: #121212;
 }
 
-.services-section h2,
+.products-section h2,
 .contact-section h2 {
     margin-bottom: 30px;
     color: #28D0F5;
     font-family: 'Orbitron', sans-serif;
 }
 
-.services {
+.products {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.service-item {
+.product-item {
     flex: 1;
     min-width: 200px;
     max-width: 300px;
@@ -112,8 +150,9 @@ nav .nav-links a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-item:hover {
-    transform: translateY(-10px);
+.product-item:hover {
+    /* transform: translateY(-10px); */
+    transform: scale(1.1);
     box-shadow: 0 0 20px #28D0F5;
 }
 
@@ -169,7 +208,8 @@ footer {
     /* Adjust the size of the logo */
     margin-bottom: 20px;
     /* Add space between the logo and the heading */
-    animation: fadeIn 2s ease;
+    animation: fadeIn 2s infinite alternate;
+    /* animation: fadeOut 2s ease; */
     /* Optional: Add a fade-in animation */
 }
 
@@ -177,9 +217,11 @@ footer {
 @keyframes fadeIn {
     from {
         opacity: 0;
+        transform: scale(1.0);
     }
 
     to {
         opacity: 1;
+        transform: scale(1.2);
     }
 }

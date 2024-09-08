@@ -5,20 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Purrfect</title>
-    <base href="/techpurrfect/">
+    <!-- TODO -->
+    <!-- <base href="/techpurrfect/"> -->
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <!-- Navigation -->
     <nav>
         <div class="logo">
-            <h1>Tech Purrfect</h1>
-
+            <div>
+                <h1>Tech </h1>
+                <h1 style="color:#00c8f4">Purrfect</h1>
+            </div>
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -26,28 +30,43 @@
     <!-- home Section -->
     <section id="home" class="home-section">
         <div class="home-content">
-            <img src="/assets/TechPurrfect.jpg" alt="Tech Purrfect Logo" class="tp-logo">
+            <img src="/assets/TechPurrfect.png" alt="Tech Purrfect Logo" class="tp-logo">
             <h2>Innovating the Future</h2>
             <p>Your partner in cutting-edge technology solutions.</p>
-            <a href="#services" class="cta-button">Explore Services</a>
+            <a href="#products" class="cta-button">Explore products</a>
+            <div class="social-icons">
+                <!-- Instagram Icon -->
+                <a href="https://www.instagram.com/techpurrfect/" class="instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Twitter Icon -->
+                <a href="https://x.com/TechPurrfect" class="twitter" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <!-- YouTube Icon -->
+                <a href="https://www.youtube.com/@Tech-Purrfect" class="youtube" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
         </div>
+
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service-item">
-                <h3>Web Development</h3>
-                <p>Building responsive and scalable web applications.</p>
+    <!-- products Section -->
+    <section id="products" class="products-section">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product-item" id="techie-cards">
+                <h3>Techie Cards</h3>
+                <p>Your Interactive Customizable Digital Cards</p>
             </div>
-            <div class="service-item">
-                <h3>Cloud Solutions</h3>
-                <p>Optimizing your business with cloud technology.</p>
+            <div class="product-item" id="techie-portfolios">
+                <h3>Techie Portfolios</h3>
+                <p>Transforming your resume into a Professional Portfolio Page</p>
             </div>
-            <div class="service-item">
-                <h3>Data Analytics</h3>
-                <p>Turning data into actionable insights.</p>
+            <div class="product-item" id="techie-game">
+                <h3>Techie Game</h3>
+                <p>Cleanse your life with a cat mini game</p>
             </div>
         </div>
     </section>
