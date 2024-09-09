@@ -206,7 +206,7 @@ footer {
 .tp-logo {
     max-width: 300px;
     /* Adjust the size of the logo */
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     /* Add space between the logo and the heading */
     animation: fadeIn 2s infinite alternate;
     /* animation: fadeOut 2s ease; */
